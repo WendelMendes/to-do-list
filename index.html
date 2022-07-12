@@ -12,8 +12,8 @@
 
        h1{
         background-image: linear-gradient(to right, rgb(129, 193, 214), rgb(246, 249, 250));
-        width: 50vw;
         border-radius: 0 15px;
+        width: 50%;
        }
 
        div{
@@ -29,15 +29,29 @@
             text-decoration: line-through;
             color: rgb(105, 102, 102);
        }
+
+       h1{
+        font-size: 4rem;
+       }
+
+       input, button{
+        font-size: 1.5rem;
+       }
+
+       label{
+        font-size: 20px;
+       }
     </style>
 </head>
 <body>
-    <h1>To-do List</h1>
-    <div class="container-one">
-        <input type="text" placeholder="Adotar uma capivara" id="entrada">
-        <button id="botao" onclick="clicar()">Adicionar</button>
-    </div>
-    <div id="container-two"></div>
+    <main>
+        <h1>To-do List</h1>
+        <div class="container-one">
+            <input type="text" placeholder="Adotar uma capivara" id="entrada">
+            <button id="botao" onclick="clicar()">Adicionar</button>
+        </div>
+        <div id="container-two"></div>
+    </main>
     
     <script>
         function clicar(){
